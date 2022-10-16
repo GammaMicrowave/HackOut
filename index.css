@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 * {
-  font-family: "Verdan", sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 body {
   background-color: #040524;
@@ -136,16 +136,17 @@ img:hover {
   /* transition-delay: -0.2s; */
 }
 .name {
-  outline: 1px solid;
+  outline: .1px solid;
   background-color: #13096e;
-  filter: drop-shadow(0 0 10px cyan);
+  /* filter: drop-shadow(0 0 10px cyan); */
   position: absolute;
   /* top: 100px; */
   right: 0;
-  font-size: 400%;
+  font-size: 300%;
   color: cyan;
-  transition: all 0.4s ease;
+  /* transition: all 0.1s ease; */
   cursor: default;
+  border-bottom-left-radius: 5px;
 }
 .name:hover {
   filter: drop-shadow(0 0 10px yellow);
@@ -416,11 +417,13 @@ img:hover {
   height: 400px;
   width: 400px; */
   position: sticky;
-  display: block;
+  display:flex;
+  flex-direction: column;
   /* top: -50vh; */
   left: -15vw;
-  margin: 5vw;
-  height: 60vh;
+  margin: 3vw;
+  height: 50vh;
+  box-sizing: content-box;
   width: 30vw;
   backdrop-filter: blur(20px);
   /* background-color: blur(100px); */
@@ -465,6 +468,7 @@ img:hover {
 }
 ul {
   overflow: hidden;
+  font-size: 0.7em;
 }
 
 .mid {
