@@ -104,21 +104,21 @@ img:hover {
 
 #n1 {
   background-color: #040524;
-  height: 40vh;
-  width: 40vh;
+  height: 80vh;
+  width: 80vh;
   z-index: 1;
 }
 #n2 {
   background-color: #040524;
-  height: 30vh;
-  width: 30vh;
+  height: 60vh;
+  width: 60vh;
   z-index: 2;
   /* transition-delay: 0.2s; */
 }
 #n3 {
   background-color: #040524;
-  height: 20vh;
-  width: 20vh;
+  height: 40vh;
+  width: 40vh;
   z-index: 3;
   /* transition-delay: 0.4s; */
 }

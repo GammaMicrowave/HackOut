@@ -50,10 +50,12 @@ let a = document.getElementsByClassName("circle");
 let b = true;
 function trial() {
   if (b == false) {
+    a[3].style.transform = "scale(1)";
     for (i = 0; i < a.length - 1; i++) {
       a[i].style.transform = "scale(0)";
     }
   } else {
+    a[3].style.transform = "scale(2)";
     for (i = 0; i < a.length - 1; i++) {
       a[i].style.transform = "scale(1)";
     }
