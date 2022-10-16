@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contain
+        {
+            /* margin: auto; */
+            height: 40vh;
+            width: 40vh;
+            /* background-color: green; */
+            /* margin-top: 40%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            box-sizing: border-box;
+            z-index: 0;
+            position: relative;
+            left: -150px;
+            top:-150px;
+        }
+        .circle
+        {
+            position: absolute;
+            border-radius: 100%;
+            transition: all 0.4s ease;
+            background-color: gray;
+            border:0.02px solid;
+
+        }
+        #n1
+        {
+            /* background-color: red; */
+            height: 40vh;
+            width:40vh;
+            z-index: 1;
+        }
+        #n2
+        {
+            /* background-color: yellow; */
+            height: 30vh;
+            width:30vh;
+            z-index: 2;
+        }
+        #n3
+        {
+            /* background-color: blue; */
+            height: 20vh;
+            width:20vh;
+            z-index: 3;
+        }
+        #n4
+        {
+            height: 10vh;
+            width: 10vh;
+            z-index: 4;
+            background-color: red;
+            /* pointer-events: none; */
+        }
+        .circle:hover
+        {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px 10px #790679;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="circle" id="n1"></div>
+        <div class="circle" id="n2"></div>
+        <div class="circle" id="n3"></div>
+        <div class="circle" id="n4" onclick="trial()"></div>
+    </div>
+    <script>
+        let a=document.getElementsByClassName("circle");
+        let b=false;
+        function trial()
+        {   if(b==false)
+           { for(i=0;i<a.length-1;i++)
+            {
+                a[i].style.transform="scale(0)";
+            }
+            }
+            else
+            {
+                for(i=0;i<a.length-1;i++)
+            {
+                a[i].style.transform="scale(1)";
+            } 
+            }
+            b=!b;
+        }
+    </script>
+</body>
+</html>

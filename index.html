@@ -1,27 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+
     <title>Kraken</title>
-    <style>
-        body{
-            background-color: darkblue;
-        }
-        img{
-            /* border: 2px solid yellow; */
-            width: 10%;
-            transition: all 0.4s ease;
-        }
-        img:hover
-        {
-            transform: scale(1.1);
-            filter: invert() drop-shadow(0px 0px 5px  white);
-        }
-    </style>
-</head>
-<body>
-    <img src="body.png" alt="image not found">
-</body>
+  </head>
+  <body>
+    <!-- <div style="z-index: 1" class = "bground" id = "tiles"> -->
+    <!-- <div id = "tiles" style = "z-index: 2"></div> -->
+    <!-- <div class = "bd"> -->
+    <!-- <img src="body.png" alt="body"  id = "temp-body"> -->
+    <!-- </div> -->
+    <div class="name hidden">Fit Bit</div>
+    <div class="head">
+      <div class="bd">
+        <div class="ab hidden">
+          <img
+            id="upper-body"
+            class="hue"
+            onclick="trial1()"
+            src="upper body.png"
+            alt=""
+          />
+          <div class="muscle-1 flexU">
+            <div class="slant-line"></div>
+            <div class="horizontal-line"></div>
+            <a href = "#shoulders" >
+            <div class="description-box">
+                    SHOULDER
+            </div></a>
+          </div>
+          <div class="muscle-2 flexU">
+            <!-- <div class="slant-line"></div> -->
+            <div class="horizontal-line"></div>
+            <a href = "#shoulders" >
+            <div class="description-box">
+              CHEST
+            </div></a>
+          </div>
+            <div class="muscle-3 flexU">
+              <div class="slant-lineR"></div>
+              <div class="horizontal-line"></div>
+              <a href = "#shoulders" >
+                <div class="description-box">
+                  BICEPS
+                </div></a>
+              
+            </div>
+          </a>
+
+          <div class="muscle-4 flexU">
+            <div class="slant-lineRD"></div>
+            <div class="horizontal-line"></div>
+            <a href = "#shoulders" >
+            <div class="description-box">
+              TRICEPS
+            </div></a>
+          </div>
+
+          <!-- <script> -->
+
+          <!-- </script> -->
+          <!-- <div class="muscle-3 flex">
+            <div class="slant-line"></div>
+            <div class="horizontal-line"></div>
+            <div class="description-box"></div>
+          </div>-->
+          <!-- <div class="muscle-4 flex">
+            <div class="slant-line"></div>
+            <div class="horizontal-line"></div>
+            <div class="description-box"></div>
+          </div> -->
+        </div>
+        <div class="ab hidden">
+          <img onclick="trial2()" id="mid-body" class="hue" src="mid body.png" alt="" />
+          <div class="muscle-5 flexM">
+            <div class="slant-lineRD"></div>
+            <div class="horizontal-line"></div>
+            <div class="description-box">
+              ABS
+            </div>
+          </div>
+          <div class="muscle-6 flexM">
+            <div class="slant-line"></div>
+            <div class="horizontal-line"></div>
+            <div class="description-box">
+              OBLIQUES
+            </div>
+          </div>
+        </div>
+        <div class="ab hidden">
+          <img onclick="trial3()" id="lower-body" class="hue" src="lower body.png" alt="" />
+          <div class="muscle-7 flexL">
+            <div class="slant-lineRD"></div>
+            <div class="horizontal-line"></div>
+            <div class="description-box">
+              CALVES
+            </div>
+          </div>
+          <div class="muscle-8 flexL">
+            <div class="slant-line"></div>
+            <div class="horizontal-line"></div>
+            <div class="description-box">
+              HIPS
+            </div>
+            <div class="muscle-9 flexL">
+              <!-- <div class="slant-line"></div> -->
+              <div class="horizontal-line"></div>
+              <div class="description-box">
+                THIGH
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <script> -->
+      <!-- </script> -->
+      <div class="box"></div>
+    </div>
+    <!-- <div class="top">CHEST</div> -->
+    <div class="top">
+      <div class="text hidden">UPPER BODY</div>
+      <div class="top1 hidden">
+        <div class="bgparts" id = "shoulders" >SHOULDERS
+          <div class="list card-flex">
+            <ul>
+              <li><a class = "anchor-class" href="https://www.youtube.com/watch?v=75pvs9H4LzU&ab_channel=TotalFitnessBodybuilding">Upright Row on Low Pulley</a></li>
+              <li><a>Military Press</a></li>
+              <li><a>Lateral Deltoid Raise</a></li>
+              <li><a>Lateral Deltoid Raise on Low Pulley</a></li>
+              <li><a>Rear Deltoid Row on Low Pulley (Seated)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bgparts">BICEP
+          <div class="list card-flex">
+            <ul>
+              <li><a>STANDING DUMBBELL CURL</a></li>
+              <li><a>STANDING BARBELL CURL</a></li>
+              <li><a>CONCENTRATION CURL</a></li>
+              <li><a>DUMBBELL PREACHER CURL</a></li>
+              <li><a>HAMMER CURL</a></li>
+              <li><a>INCLINE DUMBBELL CURL</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bgparts">TRICEP
+          <div class="list card-flex">
+            <ul>
+              <li><a>Triceps Pressdown</a></li>
+              <li><a>Close-Grip Pushup</a></li>
+              <li><a>Bench Dips</a></li>
+              <li><a>Close-Grip Bench Press</a></li>
+              <li><a>Bench Overhead Triceps Extension</a></li>
+              <li><a>Dumbbell Bench Press</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="top1 hidden">
+        <div class="bgparts">BACK
+          <div class="list card-flex">
+            <ul>
+              <li><a>Deadlift</a></li>
+              <li><a>Pull-Up</a></li>
+              <li><a>T-Bar Row</a></li>
+              <li><a>Single-Arm Smith Machine Row</a></li>
+              <li><a>Lat Pull-Down</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bgparts">CHEST
+          <div class="list card-flex">
+            <ul>
+              <li><a>Barbell Bench Press</a></li>
+              <li><a>Chest Dip</a></li>
+              <li><a>Dumbbell Incline Benchpress</a></li>
+              <li><a>Cable Incline Fly</a></li>
+              <li><a>Push-Ups</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bgparts">TRAPS
+          <div class="list card-flex">
+          <ul>
+              <li><a>SHRUGS</a></li>
+              <li><a>BARBELL DEADLIFT</a></li>
+              <li><a>RACK PULLS</a></li>
+              <li><a>UPRIGHT ROWS</a></li>
+              <li><a>FACE PULLS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mid">
+      <div class="text hidden">MID BODY</div>
+      <div class="mid1 hidden">
+        <div class="bgparts">Obliques
+          <div class="list card-flex">
+            <ul>
+              <li><a>Side plank</a></li>
+              <li><a>Cross-body mountain climber</a></li>
+              <li><a>Bicycle crunch</a></li>
+              <li><a>Standing core stabilizer</a></li>
+              <li><a>Standing knee tuck extension</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bgparts">Abbs
+          <div class="list card-flex">
+            <ul>
+              <li><a>Low-belly Leg Reach</a></li>
+              <li><a>Donkey Kickbacks</a></li>
+              <li><a>Hanging bicycles</a></li>
+              <li><a>Hanging bicycles</a></li>
+              <li><a>Mountain climbers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bgparts">Lats
+          <div class="list card-flex">
+            <ul>
+              <li><a>Lat pulldowns</a></li>
+              <li><a>Single-Arm Long-Bar Row</a></li>
+              <li><a>Decline Dumbbell Pull-Over</a></li>
+              <li><a>Pull-ups and chin-ups</a></li>
+              <li><a>Single-Arm Cable Row</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lower">
+      <div class="text hidden">LOWER BODY</div>
+      <div class="lower1 hidden">
+        <div class="bgparts">Thighs
+          <div class="list card-flex">
+            <ul>
+              <li><a>Split Squat</a></li>
+              <li><a>Sumo Squat</a></li>
+              <li><a>Reverse Lunge</a></li>
+              <li><a>Single Leg Squat</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bgparts">Calves
+          <div class="list card-flex">
+            <ul>
+              <li><a>Explosive Squat Jumps</a></li>
+              <li><a>Standing Calf Raises</a></li>
+              <li><a>Seated Calf Raises</a></li>
+              <li><a>Calf Press</a></li>
+              <li><a>Weighted Calf Stretch</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bgparts">Hip
+          <div class="list card-flex">
+            <ul>
+              <li><a>side leg raises</a></li>
+              <li><a>Lateral step-up</a></li>
+              <li><a>Frankenstein walk</a></li>
+              <li><a>Hip circles</a></li>
+              <li><a>Sidestep exercise</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contain">
+      <div class="circle" id="n1"></div>
+      <div class="circle" id="n2"></div>
+      <div class="circle" id="n3"></div>
+      <div class="circle" id="n4" onclick="trial()"></div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+    <!-- </body> -->
+    <!-- </html> -->
+    <!-- </div> -->
+  </body>
 </html>
