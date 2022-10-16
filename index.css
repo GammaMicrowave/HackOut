@@ -126,7 +126,7 @@ img:hover {
   height: 10vh;
   width: 10vh;
   z-index: 4;
-  background-color: #150050;
+  background-color: yellow;
   /* pointer-events: none; */
   transform: scale(1);
 }
