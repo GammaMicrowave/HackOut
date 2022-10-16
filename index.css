@@ -3,7 +3,7 @@
   font-family: 'Comfortaa', cursive;
 }
 body {
-  background-color: #040524;
+  background-color: #01010b;
   margin: 0px;
   /* .prevent-select { */
   -webkit-user-select: none; /* Safari */
@@ -457,7 +457,7 @@ img:hover {
 .top {
   /* height: 80vh; */
   margin-top: -10px;
-  background-color: #040524;
+  /* background-color: #040524; */
   display: flex;
   justify-content: center;
   align-items: center;
