@@ -2,6 +2,7 @@
 * {
   font-family: "Comfortaa", cursive;
 }
+/* Hello there */
 body {
   background-color: #01010b;
   margin: 0px;
@@ -104,28 +105,28 @@ img:hover {
 
 #n1 {
   background-color: #040524;
-  height: 80vh;
-  width: 80vh;
+  height:50px;
+  width: 50px;
   z-index: 1;
   display: none;
 }
 #n2 {
   background-color: #040524;
-  height: 60vh;
-  width: 60vh;
+  height: 500px;
+  width: 500px;
   z-index: 2;
   /* transition-delay: 0.2s; */
 }
 #n3 {
   background-color: #040524;
-  height: 40vh;
-  width: 40vh;
+  height: 320px;
+  width: 320px;
   z-index: 3;
   /* transition-delay: 0.4s; */
 }
 #n4 {
-  height: 10vh;
-  width: 10vh;
+  height: 80px;
+  width: 80px;
   z-index: 4;
   background-color: yellow;
   /* pointer-events: none; */
@@ -137,6 +138,7 @@ img:hover {
   box-shadow: 0px 0px 20px 10px rgb(197, 197, 3);
   /* transition-delay: -0.2s; */
 }
+
 .name {
   outline: 0.1px solid;
   background-color: yellow;
@@ -623,15 +625,15 @@ a {
   transform: scale(0.1);
 }
 #Home-img:hover {
-  transform: scale(0.15);
-  top: -70px;
-  left: -85px;
+  transform: scale(0.12);
+  top: -75px;
+  left: -82px;
 }
 #Info-img {
   position: relative;
   /* filter: hue-rotate(); */
-  top: -100px;
-  left: -125px;
+  top: -105px;
+  left: -135px;
   /* pointer-events: none; */
   cursor: pointer;
 
@@ -639,9 +641,9 @@ a {
   /* filter: drop-shadow(0 0 2px white); */
 }
 #Info-img:hover {
-  transform: scale(0.11);
-  top: -115px;
-  left: -145px;
+  transform: scale(0.09);
+  top: -120px;
+  left: -154px;
 }
 @media (prefers-reduced-motion: no-preference) {
   * {
@@ -674,28 +676,46 @@ a {
     left: -68px;
     position: sticky;
   }
+  #n2{
+      height: 380px;
+      width: 380px;
+  }
+  #n3{
+    height: 270px;
+      width: 270px;
+  }
+
   #Home-img {
     position: relative;
     /* filter: hue-rotate(); */
     top: -55px;
-    left: -65px;
-    /* pointer-events: none; */
-    cursor: pointer;
-  
-    transform: scale(0.15);
-  }
-
-  #Info-img {
-    position: relative;
-    /* filter: hue-rotate(); */
-    top: -90px;
-    left: -110px;
+    left: -70px;
     /* pointer-events: none; */
     cursor: pointer;
   
     transform: scale(0.11);
+  }
+  #Home-img:hover
+  {
+    top:-65px;
+    left: -80px;
+  }
+  #Info-img {
+    position: relative;
+    /* filter: hue-rotate(); */
+    top: -80px;
+    left: -110px;
+    /* pointer-events: none; */
+    cursor: pointer;
+  
+    transform: scale(0.09);
     /* filter: drop-shadow(0 0 2px white); */
   }
+  #Info-img:hover{
+    top:-95px;
+    left:-125px;
+  }
+
 
   
 }
