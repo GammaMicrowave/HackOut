@@ -1,19 +1,16 @@
-// const muscle1 = document.querySelector(".muscle-1");
-// const muscle2 = document.querySelector(".muscle-2");
 const mscleU = document.getElementsByClassName("flexU");
-// const descriptionBox = document.querySelector(".description-box");
-// const horizontalLine = document.querySelector(".horizontal-line");
-// const slantLine = document.querySelector(".slant-line");
 const upperBody = document.querySelector("#upper-body");
 let b1 = true;
 function trial1() {
   if (b1 == false) {
     for (i = 0; i < mscleU.length; i++) {
-      mscleU[i].style.display = "none";
+      // mscleU[i].style.display = "none";
+      mscleU[i].style.opacity = 0;
     }
   } else {
     for (i = 0; i < mscleU.length; i++) {
-      mscleU[i].style.display = "flex";
+      // mscleU[i].style.display = "flex";
+      mscleU[i].style.opacity = 1;
     }
   }
   b1 = !b1;
@@ -23,11 +20,13 @@ const mscleM = document.getElementsByClassName("flexM");
 function trial2() {
   if (b2 == false) {
     for (i = 0; i < mscleM.length; i++) {
-      mscleM[i].style.display = "none";
+      // mscleM[i].style.display = "none";
+      mscleM[i].style.opacity = 0;
     }
   } else {
     for (i = 0; i < mscleM.length; i++) {
-      mscleM[i].style.display = "flex";
+      // mscleM[i].style.display = "flex";
+      mscleM[i].style.opacity = 1;
     }
   }
   b2 = !b2;
@@ -37,11 +36,13 @@ const mscleL = document.getElementsByClassName("flexL");
 function trial3() {
   if (b3 == false) {
     for (i = 0; i < mscleL.length; i++) {
-      mscleL[i].style.display = "none";
+      // mscleL[i].style.display = "none";
+      mscleL[i].style.opacity = 0;
     }
   } else {
     for (i = 0; i < mscleL.length; i++) {
-      mscleL[i].style.display = "flex";
+      // mscleL[i].style.display = "flex";
+      mscleL[i].style.opacity = 1;
     }
   }
   b3 = !b3;
@@ -90,6 +91,14 @@ function trial() {
 //     return a*255/360;
 
 // }
+let linker = document.querySelectorAll(".description-box");
+linker.forEach((link) =>{
+    link.addEventListener("click", ()=>{
+        let el = document.getElementById(link.innerHTML);
+        el.classList.toggle("bgparts-hover");
+        el.firstElementChild.classList.toggle("list");
+    });
+});
 let elements = document.querySelectorAll(".bgparts");
 elements.forEach((element) => {
   element.addEventListener("click", () => {
@@ -98,9 +107,8 @@ elements.forEach((element) => {
   });
 });
 
-// function hova(bool){
 
-//}
+
 const hideElements = document.querySelectorAll(".hidden");
 const observer = new IntersectionObserver((e) => {
   e.forEach((entry) => {
@@ -113,30 +121,3 @@ const observer = new IntersectionObserver((e) => {
 });
 
 hideElements.forEach((el) => observer.observe(el));
-
-// let cols = Math.floor(document.body.clientWidth/50);
-// let rows = Math.floor(document.body.clientHeight/50);
-
-// const createTile = index =>{
-//     const tile = document.createElement("div");
-//     tile.classList.add("tile");
-//     return tile;
-// }
-
-// const createTiles = quantity => {
-//     Array.from(Array(quantity)).map((tile,index)=>{
-//         wrapper.appendChild(createTile(index));
-//     })
-// }
-
-// // createTiles(cols * rows);
-// const createGrid = () => {
-//     wrapper.innerHTML = "";
-//     cols = Math.floor(document.body.clientWidth / 50);
-//     rows = Math.floor(document.body.clientHeight / 50);
-
-//     wrapper.style.setProperty("--cols",cols);
-//     wrapper.style.setProperty("--rows", rows);
-//     createTiles ( cols * rows);
-// }
-// window.onresize = () => createGrid();
