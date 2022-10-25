@@ -53,6 +53,7 @@ img:hover {
   filter: invert() drop-shadow(0px 0px 10px yellow);
 }
 #upper-body {
+  /* margin-top: 50px; */
   padding-top: 50px;
 }
 #lower-body {
@@ -105,7 +106,7 @@ img:hover {
 
 #n1 {
   background-color: #040524;
-  height:50px;
+  height: 50px;
   width: 50px;
   z-index: 1;
   display: none;
@@ -287,48 +288,53 @@ img:hover {
   }
 }
 .muscle-1 {
-  display: none;
+  display: flex;
   transform: scale(0.4);
   position: absolute;
   margin-left: 230px;
   margin-bottom: 0px;
   transition: all 1s;
+  opacity: 0;
 }
 .muscle-6 {
-  display: none;
+  display: flex;
   transform: scale(0.4);
   position: absolute;
   margin-left: 200px;
   margin-bottom: 60px;
   transition: all 1s;
+  opacity: 0;
 }
 .muscle-8 {
-  display: none;
+  display: flex;
   transform: scale(0.4);
   position: absolute;
   margin-left: 230px;
   margin-bottom: 260px;
   transition: all 1s;
+  opacity: 0;
 }
 .muscle-2 {
-  display: none;
+  display: flex;
   transform: scale(0.4);
   position: absolute;
   margin-left: 170px;
   margin-top: 120px;
   transition: all 1s;
+  opacity: 0;
 }
 .muscle-9 {
-  display: none;
+  display: flex;
   transform: scale(1);
   position: absolute;
   margin-left: 0px;
   margin-top: 150px;
   transition: all 1s;
+  opacity: 0;
 }
 .muscle-3 {
   /* background-color: red; */
-  display: none;
+  display: flex;
   transform: scale(0.4);
   position: absolute;
   margin-right: 260px;
@@ -336,10 +342,11 @@ img:hover {
   transition: all 1s;
   flex-direction: row-reverse;
   z-index: 10;
+  opacity: 0;
 }
 .muscle-4 {
   /* background-color: red; */
-  display: none;
+  display: flex;
   transform: scale(0.4);
   position: absolute;
   margin-right: 280px;
@@ -347,26 +354,29 @@ img:hover {
   transition: all 1s;
   flex-direction: row-reverse;
   z-index: 100;
+  opacity: 0;
 }
 .muscle-5 {
   /* background-color: red; */
-  display: none;
+  display: flex;
   transform: scale(0.4);
   position: absolute;
   margin-right: 230px;
   margin-top: 50px;
   transition: all 1s;
   flex-direction: row-reverse;
+  opacity: 0;
 }
 .muscle-7 {
   /* background-color: red; */
-  display: none;
+  display: flex;
   transform: scale(0.4);
   position: absolute;
   margin-right: 265px;
   margin-top: 15px;
   transition: all 1s;
   flex-direction: row-reverse;
+  opacity: 0;
 }
 /* 
 .glass{
@@ -450,6 +460,8 @@ img:hover {
 .text {
   color: rgb(227, 235, 235);
   font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .top1 {
@@ -506,7 +518,6 @@ ul {
   display: flex;
 }
 
-
 .hidden {
   opacity: 0;
   /* filter: blur(20px); */
@@ -551,7 +562,7 @@ li {
   opacity: 1;
 }
 .list {
-  opacity: 0;
+  /* opacity: 0; */
   display: none;
 }
 li {
@@ -662,7 +673,7 @@ a {
     flex-wrap: wrap;
   }
   .bgparts {
-    width: 45vw;
+    width: 4vw;
   }
 }
 
@@ -676,13 +687,13 @@ a {
     left: -68px;
     position: sticky;
   }
-  #n2{
-      height: 380px;
-      width: 380px;
+  #n2 {
+    height: 380px;
+    width: 380px;
   }
-  #n3{
+  #n3 {
     height: 270px;
-      width: 270px;
+    width: 270px;
   }
 
   #Home-img {
@@ -692,12 +703,11 @@ a {
     left: -70px;
     /* pointer-events: none; */
     cursor: pointer;
-  
+
     transform: scale(0.11);
   }
-  #Home-img:hover
-  {
-    top:-65px;
+  #Home-img:hover {
+    top: -65px;
     left: -80px;
   }
   #Info-img {
@@ -707,15 +717,12 @@ a {
     left: -110px;
     /* pointer-events: none; */
     cursor: pointer;
-  
+
     transform: scale(0.09);
     /* filter: drop-shadow(0 0 2px white); */
   }
-  #Info-img:hover{
-    top:-95px;
-    left:-125px;
+  #Info-img:hover {
+    top: -95px;
+    left: -125px;
   }
-
-
-  
 }
